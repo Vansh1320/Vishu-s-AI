@@ -1,0 +1,28 @@
+services:
+  # Backend API Server
+  - type: web
+    name: hybridai-server
+    env: node
+    plan: free
+    buildCommand: cd server && npm install
+    startCommand: cd server && node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: OPENAI_API_KEY
+        sync: false  # Set this in Render dashboard
+      - key: PORT
+        value: 4000
+      - key: CORS_ORIGIN
+        value: https://hybridai-client.onrender.com  # Update with your client URL
+
+  # Frontend Client
+  - type: web
+    name: hybridai-client
+    env: static
+    buildCommand: cd client && npm install && npm run build
+    staticPublishPath: client/dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://hybridai-server.onrender.com  # Update with your server URL
+
