@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import ThemeToggle from './ThemeToggle'
 import { Menu, X } from 'lucide-react'
+import logoImg from '../assets/Logo.jpg'
 
 export default function Navbar() {
 	const [open, setOpen] = useState(false)
@@ -25,8 +26,16 @@ export default function Navbar() {
 			<nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 				<div className="mt-4 rounded-2xl backdrop-blur-md border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5">
 					<div className="flex h-16 items-center justify-between px-4 sm:px-6 text-slate-900 dark:text-white">
-						<Link to="/" className="text-xl font-bold tracking-tight">
-							Hybrid<span className="text-cyan-400">AI</span>
+						<Link to="/" className="flex items-center gap-2 text-xl font-bold tracking-tight">
+							<img
+								src={logoImg}
+								alt="Hybrid AI logo"
+								className="h-10 w-10 rounded-full object-cover border border-white/20 shadow-[0_0_12px_rgba(0,0,0,0.25)]"
+								loading="lazy"
+							/>
+							<span>
+								Sensation<span className="text-cyan-400">AI</span>
+							</span>
 						</Link>
 
 						<ul className="hidden md:flex items-center gap-8 text-sm">
