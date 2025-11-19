@@ -1,6 +1,6 @@
 import SectionHeading from '../components/SectionHeading'
 import { motion } from 'framer-motion'
-import { Lightbulb, Leaf, Palette } from 'lucide-react'
+import { Lightbulb, Leaf, Palette, TrendingUp, Users, DollarSign } from 'lucide-react'
 import vaishnaviImg from '../assets/Vishu.jpg'
 import sarahImg from '../assets/team-sarah.jpg'
 import davidImg from '../assets/team-david.jpg'
@@ -109,6 +109,83 @@ export default function About() {
 					</motion.div>
 				))}
 			</div>
+
+			{/* Indian Film Industry & AI Growth Section */}
+			<motion.div
+				initial={{ opacity: 0, y: 20 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				viewport={{ once: true }}
+				transition={{ duration: 0.6 }}
+				className="mt-20"
+			>
+				<SectionHeading
+					title="Indian Film Industry & AI Growth"
+					subtitle="Transforming India's entertainment sector with intelligent technology"
+				/>
+
+				<div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+					<motion.div
+						initial={{ opacity: 0, y: 16 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						transition={{ duration: 0.5 }}
+						className="rounded-2xl border border-white/10 bg-gradient-to-br from-cyan-500/10 to-transparent p-6"
+					>
+						<DollarSign className="text-cyan-400 mb-4" size={32} />
+						<h3 className="text-xl font-semibold mb-3">Industry Revenue Growth</h3>
+						<p className="text-white/80 mb-4">
+							India's Film, TV, and OTT sector earned <span className="text-cyan-400 font-semibold">₹1.1 lakh crore</span> in FY 2024 and is expected to reach <span className="text-cyan-400 font-semibold">₹1.6 lakh crore by 2028</span>, supporting <span className="text-cyan-400 font-semibold">2.6 million jobs</span>.
+						</p>
+						<p className="text-white/60 text-sm mt-4">
+							<strong className="text-white/80">Source:</strong> Deloitte–MPA Report 2025, NFDC India
+						</p>
+					</motion.div>
+
+					<motion.div
+						initial={{ opacity: 0, y: 16 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						transition={{ duration: 0.5, delay: 0.1 }}
+						className="rounded-2xl border border-white/10 bg-gradient-to-br from-cyan-500/10 to-transparent p-6"
+					>
+						<Users className="text-cyan-400 mb-4" size={32} />
+						<h3 className="text-xl font-semibold mb-3">AI-Powered Job Creation</h3>
+						<p className="text-white/80 mb-4">
+							With AI tools, the industry could add <span className="text-cyan-400 font-semibold">3.6 lakh more jobs by 2029</span> in areas like editing, animation, and virtual production.
+						</p>
+						<p className="text-white/60 text-sm mt-4">
+							<strong className="text-white/80">Source:</strong> Deloitte–MPA Report 2025, NFDC India
+						</p>
+					</motion.div>
+
+					<motion.div
+						initial={{ opacity: 0, y: 16 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						transition={{ duration: 0.5, delay: 0.2 }}
+						className="rounded-2xl border border-white/10 bg-gradient-to-br from-cyan-500/10 to-transparent p-6 md:col-span-2"
+					>
+						<TrendingUp className="text-cyan-400 mb-4" size={32} />
+						<h3 className="text-xl font-semibold mb-3">AI Impact on Revenue & Costs</h3>
+						<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+							<div className="rounded-lg bg-white/5 p-4 border border-white/10">
+								<p className="text-cyan-400 text-2xl font-bold mb-1">+10%</p>
+								<p className="text-white/80 text-sm">Revenue Increase</p>
+							</div>
+							<div className="rounded-lg bg-white/5 p-4 border border-white/10">
+								<p className="text-cyan-400 text-2xl font-bold mb-1">-15%</p>
+								<p className="text-white/80 text-sm">Cost Reduction</p>
+							</div>
+						</div>
+						<p className="text-white/80">
+							Adoption of artificial intelligence (AI) can increase revenues by <span className="text-cyan-400 font-semibold">10%</span> and reduce costs by <span className="text-cyan-400 font-semibold">15%</span> for media and entertainment companies.
+						</p>
+						<p className="text-white/60 text-sm mt-4">
+							<strong className="text-white/80">Sources:</strong> The Economic Times 2025; Business Research Insights 2025; EY Report (WAVES Summit)
+						</p>
+					</motion.div>
+				</div>
+			</motion.div>
 
 			{/* Team Section */}
 			<motion.div
