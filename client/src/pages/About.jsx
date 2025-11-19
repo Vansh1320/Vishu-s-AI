@@ -20,7 +20,7 @@ const cards = [
 const teamMembers = [
 	{
 		name: 'Vaishnavi Mathur',
-		role: 'Lead AI Engineer',
+		role: 'Group leader',
 		bio: 'Specializes in computer vision and real-time rendering systems.',
 		image: vaishnaviImg
 	},
