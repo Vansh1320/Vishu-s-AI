@@ -47,12 +47,12 @@ export default function Navbar() {
 
 						<div className="flex items-center gap-3">
 							<ThemeToggle />
-							<button className="hidden sm:inline-flex px-4 h-10 rounded-lg border border-black/10 dark:border-white/10 text-slate-800 dark:text-white/90 hover:text-slate-900 dark:hover:text-white hover:border-black/20 dark:hover:border-white/20 transition">
+							<Link to="/login" className="hidden sm:inline-flex px-4 h-10 rounded-lg border border-black/10 dark:border-white/10 text-slate-800 dark:text-white/90 hover:text-slate-900 dark:hover:text-white hover:border-black/20 dark:hover:border-white/20 transition">
 								Login
-							</button>
-							<button className="hidden sm:inline-flex px-4 h-10 rounded-lg bg-cyan-500/90 hover:bg-cyan-400 text-slate-950 font-medium transition shadow-[0_0_20px_rgba(34,211,238,0.35)]">
+							</Link>
+							<Link to="/signup" className="hidden sm:inline-flex px-4 h-10 rounded-lg bg-cyan-500/90 hover:bg-cyan-400 text-slate-950 font-medium transition shadow-[0_0_20px_rgba(34,211,238,0.35)]">
 								Sign Up
-							</button>
+							</Link>
 							<button className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-black/10 dark:border-white/10 text-slate-800 dark:text-white/90" onClick={() => setOpen(v => !v)} aria-label="Menu">
 								{open ? <X size={18} /> : <Menu size={18} />}
 							</button>
