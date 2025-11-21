@@ -13,7 +13,7 @@ export default function Home() {
 						transition={{ duration: 0.6 }}
 						className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight"
 					>
-						Hybrid AI–Human Film Factory: <span className="text-cyan-400">The Future of Filmmaking</span>
+						SensationAI–Human Film Factory: <span className="text-cyan-400">The Future of Filmmaking</span>
 					</motion.h1>
 					<motion.p
 						initial={{ opacity: 0 }}
