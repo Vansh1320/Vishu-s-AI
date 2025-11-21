@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { Lightbulb, Leaf, Palette, TrendingUp, Users, DollarSign } from 'lucide-react'
 import vaishnaviImg from '../assets/Vishu.jpg'
 import mehekImg from '../assets/Mehek Gupta.jpg'
-import divyaImg from '../assets/Divya-Sanap.jpg'
+import divyaImg from '../assets/divya-sanap.jpg'
 import sujaanImg from '../assets/Sujaan Badani.jpg'
 import priyaVayasImg from '../assets/Priya Vayas.jpg'
 import chhayansiNityaImg from '../assets/Chhayansi Nitya.jpg'
@@ -227,6 +227,7 @@ export default function About() {
 		</div>
 	)
 }
+
 
 
 
